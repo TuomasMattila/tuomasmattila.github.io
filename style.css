@@ -52,10 +52,6 @@ hr {
     text-align: center;
 }
 
-.about-list {
-    list-style: none;
-}
-
 @media (max-width: 480px) {
     .about-grid {
         grid-template-columns: 100%;
