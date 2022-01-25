@@ -2,13 +2,21 @@
     --box-shadow-clr: rgb(34, 60, 80, 0.16);
 }
 
+/* 
+This could be usefull at some point
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+} */
+
 /*The whole page*/
 body {
     font-family: 'Noto Sans', sans-serif;
     background: #82d7ff;
 }
 
-h1, h2, h3, h4 {
+h1, h2, h3, h4, a {
     font-family: 'Roboto Mono', monospace;
 }
 
@@ -91,26 +99,33 @@ hr {
 }
 
 .project-image {
+    width: 300px;
+    height: 300px;
     border-radius: 5px;
+    object-fit: cover;
+    text-shadow: none;
     box-shadow: 0 4px 6px 0 var(--box-shadow-clr);
     transition: all ease-in-out .2s;
 }
 
 .project-image:hover {
-    filter: brightness(.75);
-    box-shadow: 0 8px 12px 0 var(--box-shadow-clr);
+    filter: brightness(.5);
+    box-shadow: 8px 8px 3px 0px var(--box-shadow-clr);
 }
 
-.project-image-wrapper:hover > h4 {
+.project-image-wrapper:hover > a {
     visibility: visible;
+    text-shadow: 1px 1px 4px black;
 }
 
-.project-image-wrapper > h4 {
+.project-image-wrapper > a {
     position: absolute;
-    top: 40%; /*I do not know why these have to be 40% for me, they are 50% in the tutorial*/
-    left: 40%;
-    transform: translate(-50% -50%);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     color: white;
+    text-decoration: none;
+    font-size: 1rem;
     visibility: hidden;
     z-index: 2;
     transition: all ease-in-out .2s;
