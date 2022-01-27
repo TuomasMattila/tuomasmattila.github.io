@@ -1,19 +1,20 @@
 :root {
     --box-shadow-clr: rgb(34, 60, 80, 0.4);
+    --background-clr: #82d7ff;
+    --dark-clr: #00aeff;
+    --dark-hower-clr: #38c0ff;
 }
 
-/* 
-This could be usefull at some point
+/*The whole page*/
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-} */
+}
 
-/*The whole page*/
 body {
     font-family: 'Noto Sans', sans-serif;
-    background: #82d7ff;
+    background: var(--background-clr);
 }
 
 h1, h2, h3, h4, a {
@@ -33,6 +34,39 @@ hr {
     border: 0;
     height: 1px;
     background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+}
+
+/*Header*/
+header {
+    background: var(--dark-clr);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    height: 2rem;
+}
+
+header ul {
+    list-style: none;
+}
+
+header li {
+    float: left;
+}
+
+header a {
+    text-decoration: none;
+    color: black;
+    padding: 1rem;
+}
+
+header a:not(.active):hover {
+    background-color: var(--dark-hower-clr);
+}
+
+.active {
+    background-color: var(--background-clr);
 }
 
 
@@ -137,6 +171,7 @@ hr {
     }
 }
 
+/*TODO: FIX THE GAPS*/
 
 /*Links and contact*/
 .links-and-contact {
@@ -174,7 +209,7 @@ form input, textarea {
 
 form input[type="submit"] {
     width: 250px;
-    background: #00aeff;
+    background: var(--dark-clr);
     text-transform: uppercase;
     font-family: 'Noto Sans', sans-serif;
     font-weight: bold;
