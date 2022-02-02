@@ -44,9 +44,9 @@ header {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-end;
     overflow: hidden;
-    height: 2rem;
+    height: 4rem;
 }
 
 header ul {
@@ -60,7 +60,10 @@ header li {
 header a {
     text-decoration: none;
     color: black;
-    padding: 1rem;
+    padding: 0.5rem;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    transition: all 0.2s ease-in-out;
 }
 
 header a:not(.active):hover {
