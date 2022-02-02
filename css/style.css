@@ -19,6 +19,8 @@ body {
 
 h1, h2, h3, h4, a {
     font-family: 'Roboto Mono', monospace;
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
 }
 
 .container {
@@ -208,7 +210,7 @@ form input, textarea {
 }
 
 form input[type="submit"] {
-    width: 250px;
+    width: 240px;
     background: var(--dark-clr);
     text-transform: uppercase;
     font-family: 'Noto Sans', sans-serif;
