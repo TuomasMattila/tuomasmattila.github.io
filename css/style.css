@@ -60,19 +60,25 @@ header li {
 header a {
     text-decoration: none;
     color: black;
+}
+
+.nav-object {
     padding: 0.5rem;
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
+    background: var(--dark-background-clr);
     transition: all 0.2s ease-in-out;
 }
 
-header a:not(.active):hover {
+.nav-object:not(.active):hover {
     background-color: var(--dark-hower-clr);
 }
 
-.active {
+.nav-object.active {
     background-color: var(--background-clr);
 }
+
+
 
 
 /*Intro*/
