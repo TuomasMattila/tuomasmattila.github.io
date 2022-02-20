@@ -38,6 +38,12 @@ hr {
 
 /*Header*/
 header {
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+.header-wrapper {
     background: var(--dark-clr);
     display: flex;
     flex-direction: column;
@@ -72,11 +78,17 @@ header a {
     background-color: var(--dark-hower-clr);
 }
 
+.nav-object a {
+    transition: all 0.2s ease-in-out;
+}
+
+.nav-object:not(.active):hover a {
+    color: white;
+}
+
 .nav-object.active {
     background-color: var(--background-clr);
 }
-
-
 
 
 /*Intro*/
