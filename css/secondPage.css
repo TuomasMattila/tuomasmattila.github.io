@@ -3,6 +3,11 @@
     min-height: 150vh;
 }
 
+.wrapper h3, h4 {
+    text-align: center;
+    padding-top: 1rem;
+}
+
 .media-scroller {
     --_spacer: 1rem;
     display: grid;
@@ -38,6 +43,6 @@
     scroll-snap-type: inline mandatory;
 }
   
-  .snaps-inline > * {
+.snaps-inline > * {
     scroll-snap-align: start;
 }
