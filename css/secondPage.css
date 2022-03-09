@@ -5,11 +5,10 @@
 
 .wrapper h3, h4 {
     text-align: center;
-    padding-top: 1rem;
 }
 
-hr {
-    margin-top: 1rem;
+.wrapper > div {
+    margin: 20px auto;
 }
 
 #fact {

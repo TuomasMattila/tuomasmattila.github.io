@@ -113,6 +113,7 @@ header a {
 /*I am and I like to*/
 .about-grid {
     display: grid;
+    margin-block: 0;
     grid-template-columns: 50% 50%;
 }
 
@@ -133,10 +134,12 @@ header a {
     .about-grid {
         grid-template-columns: 100%;
         column-width: auto;
+        gap: 1rem;
     }
     .i-am, .i-like {
         width: 195px;
-        justify-self:center;
+        justify-self: center;
+        text-align: center;
     }
 }
 
