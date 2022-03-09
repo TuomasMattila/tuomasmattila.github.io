@@ -8,6 +8,32 @@
     padding-top: 1rem;
 }
 
+hr {
+    margin-top: 1rem;
+}
+
+#fact {
+    background: -webkit-linear-gradient(top left, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+    background-size: 400% 400%;
+    font-weight: bold;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: gradient 5s ease infinite;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
 .media-scroller {
     --_spacer: 1rem;
     display: grid;
